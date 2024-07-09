@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/icon-web.svg" type="image/x-icon" />
+    <title>Sing in</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!---------
+      css code 
+     ---------->
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/pages/sing-in.css" />
+  </head>
+  <body>
+    <header class="flex">
+      <a class="logo" href="../index.html">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span style="font-weight: bold; letter-spacing: 4px">AUG</span>
+        <p>Shopping</p>
+      </a>
+
+      <div class="links">
+        <a style="position: relative" class="cart" href="./cart.html"
+          ><i class="fa-solid fa-cart-shopping"></i>
+          0.00$
+          <span class="products-number">2</span>
+        </a>
+        <a class="sign-in" href="./sign-in.html"
+          ><i class="fa-solid fa-arrow-right-to-bracket"></i>
+          Sign in
+        </a>
+        <a class="register" href="./register.html"
+          ><i class="fa-solid fa-user-plus"></i>
+          Register
+        </a>
+      </div>
+    </header>
+
+    <main class="flex">
+        <h1>LogIn</h1>
+      <form class="container">
+        
+        <div>
+          <input class="input-t" type="email" placeholder="Email" required />
+        </div>
+        <div class="pass">
+          <input class="input-t" type="password" placeholder="password" required />
+        </div>
+        <a class="forget" href="">Forgot password?</a>
+        
+        <div>
+         <input class="login" type="submit" value="LOGIN">
+        </div>
+        <p>Don’t have an account? <a href="./register.html">Sign Up</a></p>
+      </form>
+    </main>
+
+    <footer>Designed and developed by <span>hasan hekal</span> © 2024.</footer>
+  </body>
+</html>

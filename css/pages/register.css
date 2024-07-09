@@ -1,0 +1,72 @@
+header.flex {
+    background-color: var(--footer-bg);
+    color: #fff;
+    padding-block: 0.6rem;
+
+    & .fa-solid {
+        color: #fff;
+    }
+
+    & .fa-bag-shopping {
+        font-size: 1.5rem;
+    }
+    & .register {
+        background-color: #5c5c5c;
+    }
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+}
+main {
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+@media (max-width : 600px) {
+    .container {
+        min-width: 300px;
+
+    }
+}
+form h1 {
+    margin-bottom: 20px;
+}
+
+.input-t {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #cacaca;
+    transition: 0.3s;
+}
+.input-t:focus {
+    border-bottom: 2px solid #2760b4;
+    scale: 1.01;
+}
+input[type=submit] {
+    background-color: var(--footer-bg);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.2s;
+    margin-top: 20px;
+    
+}
+input[type=submit]:focus {
+    scale: 0.9;
+}

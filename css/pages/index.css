@@ -1,0 +1,137 @@
+/*=====================
+    Background Style 
+======================= */
+
+div.top-img {
+  background-image: url(../../images/bac.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  
+}
+
+section.content {
+  font-size: 2rem;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  margin-left: 10%;
+
+  & p.lifestyle {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+  }
+  & p.men {
+    font-weight: bold;
+    margin-top: 0.7rem;
+  }
+  & p.sale {
+    font-weight: bold;
+    margin-block: 0.5rem;
+  }
+  & p.sale span {
+    margin-left: 0.6rem;
+    color: crimson;
+  }
+  & p.free-shipping {
+    font-size: 1.5rem;
+  }
+  & button {
+    background-color: #000000;
+    color: #fff;
+    padding: 0.6rem 1.6rem;
+    border-radius: 3px;
+    margin-top: 0.9rem;
+    font-size: 0.9rem;
+  }
+}
+
+main section.products.flex {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem 1.4rem;
+
+  & article.card {
+    border-radius: 10px;
+    transition: 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+
+  & article.card:hover {
+    scale: 1.01;
+  }
+
+  & article.card a img {
+    border-radius: 10px 10px 0 0;
+  }
+  & .card.content-card {
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+  }
+  & .content-card .title {
+    padding-top: 0.7rem;
+    padding-inline: 0.4rem;
+    text-transform: capitalize;
+  }
+
+  & .content-card .description {
+    padding-inline: 0.4rem;
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.1rem;
+  }
+  & .content-card .price {
+    color: rgb(199, 0, 40);
+    font-weight: bold;
+    font-size: 0.9rem;
+
+  }
+
+  & .content-card .price-cart {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+  }
+
+  & .content-card .add-to-cart {
+    background-color: var(--blue-button);
+    color: #fff;
+    text-transform: capitalize;
+    padding: 6px 8px;
+    font-size: 0.7rem;
+    border-radius: 5px;
+  }
+
+}
+
+.main-h1 {
+  margin: 2rem 0 2rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================
+          MEDIA
+=========================== */
+@media (width < 1000px) {
+  div.top-img {
+    background-position: left;
+  }
+}
